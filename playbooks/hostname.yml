@@ -1,0 +1,14 @@
+- name: Set hostname to persist and set hostname
+  hosts: "cluster"
+  become: yes
+  gather_facts: True
+  tasks:
+    - name: set cloud config
+      template:
+        src: /home/mike/Ansible/templates/cloud.cfg
+        dest: /etc/cloud/cloud.cfg
+    
+    - name: set hostname
+      hostname:
+        name: "{{ hostname }}"
+
