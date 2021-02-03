@@ -1,12 +1,12 @@
 [ubuntu]
 192.168.2.30 #ansible
 192.168.2.35 #portainer
-192.168.2.46 #Plex
 192.168.2.50 #factorio
 192.168.2.51 #ark
 192.168.2.52 #krastorio
 192.168.2.47 #downloader
 192.168.2.7  #Unifi controller
+
 
 [cluster]
 192.168.2.41:2222 hostname=kube01
@@ -20,3 +20,6 @@
 
 [kubeagents]
 192.168.2.[43:45]:2222
+
+[plex]
+192.168.2.46:2222 hostname=plexstack
