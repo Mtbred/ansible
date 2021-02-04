@@ -13,8 +13,9 @@
         name: "{{ hostname }}"
 
     - name: make .ssh directory
-      path: ~/.ssh
-      state: directory
+      file:
+        path: ~/.ssh
+        state: directory
 
     - name: copy authorized_keys
       template:
