@@ -1,5 +1,5 @@
 - name: Set hostname to persist and set hostname
-  hosts: "plex"
+  hosts: "all"
   become: yes
   gather_facts: True
   tasks:
@@ -12,3 +12,7 @@
       hostname:
         name: "{{ hostname }}"
 
+    - name: copy authorized_keys
+      template:
+        src: /home/mike/ansible/templates/authorized_keys
+        dest: ~/.ssh/authorized_keys
