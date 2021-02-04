@@ -22,4 +22,4 @@
 192.168.2.[43:45]:2222
 
 [plex]
-192.168.2.46:2222 hostname=plexstack
+192.168.2.46 hostname=plexstack
