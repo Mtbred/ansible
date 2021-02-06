@@ -1,6 +1,6 @@
 [ubuntu]
 192.168.2.30 #ansible
-192.168.2.35 #portainer
+192.168.2.35:2222 hostname=DockerHost #portainer
 192.168.2.50 #factorio
 192.168.2.51 #ark
 192.168.2.52 #krastorio
