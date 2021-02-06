@@ -1,4 +1,4 @@
-- hosts: "cluster"
+- hosts: "all"
   become: yes
   tasks:
     - name: apt
