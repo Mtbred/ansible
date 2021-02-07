@@ -1,6 +1,6 @@
 [ubuntu]
 192.168.2.30 #ansible
-192.168.2.35:2222 hostname=DockerHost #portainer
+192.168.2.35 hostname=DockerHost #portainer
 192.168.2.50:22 hostname=factorio #factorio
 192.168.2.51 #ark
 192.168.2.52 #krastorio
@@ -9,17 +9,17 @@
 
 
 [cluster]
-192.168.2.41:2222 hostname=kube01
-192.168.2.42:2222 hostname=kube02
-192.168.2.43:2222 hostname=kube03
-192.168.2.44:2222 hostname=kube04
-192.168.2.45:2222 hostname=kube05
+192.168.2.41: hostname=kube01
+192.168.2.42: hostname=kube02
+192.168.2.43: hostname=kube03
+192.168.2.44: hostname=kube04
+192.168.2.45: hostname=kube05
 
 [kubeservers]
-192.168.2.[41:42]:2222
+192.168.2.[41:42]
 
 [kubeagents]
-192.168.2.[43:45]:2222
+192.168.2.[43:45]
 
 [plex]
 192.168.2.46 hostname=plexstack
