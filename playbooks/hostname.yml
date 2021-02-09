@@ -5,10 +5,9 @@
   tasks:
     - name: set cloud config
       template:
-        src: /home/mike/Ansible/templates/cloud.cfg
+        src: /home/mike/ansible/templates/cloud.cfg
         dest: /etc/cloud/cloud.cfg
-    
+
     - name: set hostname
       hostname:
         name: "{{ hostname }}"
-
