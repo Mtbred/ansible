@@ -1,0 +1,15 @@
+- name: install autoupdate
+  hosts: "all"
+  become: yes
+  gather_facts: True
+  tasks:
+    - name: apt
+      apt:
+        update_cache: yes
+        upgrade: 'yes'
+
+    - name: install autoupdate
+      apt:
+        name: unattended-upgrades
+        state: present
+      become: true
