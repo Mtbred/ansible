@@ -9,11 +9,11 @@
 
 
 [cluster]
-192.168.2.41: hostname=kube01
-192.168.2.42: hostname=kube02
-192.168.2.43: hostname=kube03
-192.168.2.44: hostname=kube04
-192.168.2.45: hostname=kube05
+192.168.2.41 hostname=kube01
+192.168.2.42 hostname=kube02
+192.168.2.43 hostname=kube03
+192.168.2.44 hostname=kube04
+192.168.2.45 hostname=kube05
 
 [kubeservers]
 192.168.2.[41:42]
