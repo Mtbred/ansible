@@ -1,5 +1,5 @@
 - name: Set hostname to persist and set hostname
-  hosts: "cluster"
+  hosts: "all"
   become: yes
   gather_facts: True
   tasks:
@@ -11,3 +11,16 @@
     - name: set hostname
       hostname:
         name: "{{ hostname }}"
+<<<<<<< HEAD
+=======
+
+    - name: make .ssh directory
+      file:
+        path: /home/mike/.ssh
+        state: directory
+
+    - name: copy authorized_keys
+      template:
+        src: /home/mike/ansible/templates/authorized_keys
+        dest: /home/mike/.ssh/authorized_keys
+>>>>>>> 571ffdca862ae6a95aca87f9e23eee7139323369
