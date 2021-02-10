@@ -1,0 +1,17 @@
+apt
+  update
+  upgrade
+hostname
+  set hostname
+  set hostname not to change
+set auto update
+  automattic-updates role
+  configure for security updates only?
+copy public ssh keys
+set SSH port to 2222
+ansible user
+  create ansible user
+  copy ssh key for ansible user
+  configure sudo for ansible user
+disable root
+set time zone
