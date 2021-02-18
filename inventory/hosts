@@ -1,5 +1,5 @@
 [ubuntu]
-192.168.2.30 hostname=ansible #ansible
+192.168.2.30 hostname=Ansible #ansible
 192.168.2.35 hostname=DockerHost #portainer
 192.168.2.46:22 hostname=plexstack
 192.168.2.50:22 hostname=factorio #factorio
